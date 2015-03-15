@@ -5,6 +5,7 @@ class Profile
     self.id = args["id"]
     self.description = args["description"]
     self.email = args["email"]
+    self.display_name = args["display_name"]
   end
 end
 

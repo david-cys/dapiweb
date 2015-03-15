@@ -25,6 +25,22 @@ class ProfileService
     end
   end
 
+  def create(params)
+    options = {
+      body: {
+        profile: params
+      }
+    }
+    response = self.class.post("/profiles", options)
+
+    case response.code
+    when 200
+      Profile.new(response["data"])
+    when 404
+      false
+    end
+  end
+
   def list
     response = self.class.get("/profiles")
 
