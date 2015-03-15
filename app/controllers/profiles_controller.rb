@@ -24,6 +24,8 @@ class ProfilesController < ApplicationController
   def show
     profile_service = ProfileService.new
     @profile = profile_service.get(params[:id])
+    avatar_service = AvatarService.new
+    @avatar = avatar_service.get_latest(@profile.id)
     render text: "Not found", status: 404 if !@profile
   end
 

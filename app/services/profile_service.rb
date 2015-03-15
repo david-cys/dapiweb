@@ -6,7 +6,7 @@ class ProfileService
   if Rails.env.production?
     base_uri 'http://dapi-api.herokuapp.com'
   else
-    base_uri 'http://localhost:3000'
+    base_uri 'http://localhost:3001'
   end
 
   def initialize(args = {})

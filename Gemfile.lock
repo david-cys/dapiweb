@@ -77,6 +77,10 @@ GEM
     haml (4.0.5)
       tilt
     hike (1.2.3)
+    httmultiparty (0.3.16)
+      httparty (>= 0.7.3)
+      mimemagic
+      multipart-post
     httparty (0.13.3)
       json (~> 1.8)
       multi_xml (>= 0.5.2)
@@ -95,10 +99,12 @@ GEM
       treetop (~> 1.4.8)
     method_source (0.8.2)
     mime-types (1.25.1)
+    mimemagic (0.2.1)
     mini_portile (0.5.2)
     minitest (4.7.5)
     multi_json (1.11.0)
     multi_xml (0.5.5)
+    multipart-post (2.0.0)
     nokogiri (1.6.1)
       mini_portile (~> 0.5.0)
     pg (0.18.1)
@@ -204,6 +210,7 @@ DEPENDENCIES
   factory_girl_rails (~> 4.0)
   foundation-rails
   haml
+  httmultiparty
   httparty
   jbuilder (~> 1.2)
   jquery-rails

@@ -4,6 +4,8 @@ Dapiweb::Application.routes.draw do
 
   get '/profiles/search', as: :search_profiles, to: 'profiles#search'
   resources :profiles
+  resources :avatars, only: [:new, :create]
+
   # You can have the root of your site routed with "root"
   # root 'welcome#index'
   root 'profiles#index'

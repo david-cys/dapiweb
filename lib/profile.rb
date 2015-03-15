@@ -1,5 +1,5 @@
 class Profile
-  attr_accessor :id, :email, :description
+  attr_accessor :id, :email, :description, :display_name
 
   def initialize(args = {})
     self.id = args["id"]
