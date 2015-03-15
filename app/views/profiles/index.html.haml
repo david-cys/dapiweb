@@ -1,6 +1,17 @@
-%h1 Profile Index
-- @profiles.each do |profile|
-  %h2= profile.email
-  %h2= profile.description
-  %h2= profile.email
+.row
+  .small-12.column
+    %h1 Profile Index
+  .small-12.column
+    %table
+      %tr
+        %th id
+        %th email
+        %th display_name
+        %th description
+      - @profiles.each do |profile|
+        %tr
+          %td= profile.id
+          %td= profile.email
+          %td= profile.description
+          %td= profile.email
 
